@@ -13,13 +13,23 @@ a:focus,
 a:active {
     color: #f14848;
 }
+
+.primary-header {
+
+    border: 1px solid red;
+    background-image: url("../assest/other/homepage-featured-new-1920x745.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% auto;
+    /*background-attachment: fixed;*/
+    height: 300px;
+
+
+}
+
 .site-footer {
     background-color: #222;
 }
-
-/*.site-footer a:link,*/
-/*.site-footer a:visited {*/
-    /*color: #636363 ;*/
 
 
 .bottom-nav-white > li > a {
