@@ -1,9 +1,31 @@
 
+a {
+    text-decoration: none;
+}
+
+a:link,
+a:visited {
+    color: #3d3d3d;
+}
+
+a:hover,
+a:focus,
+a:active {
+    color: #f14848;
+}
+.site-footer {
+    background-color: #222;
+}
+
+/*.site-footer a:link,*/
+/*.site-footer a:visited {*/
+    /*color: #636363 ;*/
 
 
-@media (max-width: 700px) {
-    .main-menu {
+.bottom-nav-white > li > a {
+    color: white;
+}
 
-        display: none;
-    }
+.bottom-footer > ul > li > a:hover {
+    color: white;
 }
