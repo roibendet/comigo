@@ -20,17 +20,115 @@ a:active {
     background-image: url("../assest/other/homepage-featured-new-1920x745.jpg");
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: 100% auto;
-    /*background-attachment: fixed;*/
+    background-size: cover;
+    width: 800px;
+    height: 300px;
+}
+
+.second-section {
+    background-color: white;
     height: 300px;
 
+}
+
+.enhace-best {
+    display: inline;
+    margin: 0;
+    padding: 0;
+
+}
+
+.enhance-any-tv {
+    display: inline-block;
+    width: 50%;
+    height: 500px;
+    background-image: url("../assest/other/home-tv-service-bg1.png");
+    background-size: cover;
+}
+
+.deploy-best {
+    display: inline-block;
+    width: 49%;
+    height: 500px;
+    background-image: url("../assest/other/home-tv-service-bg2.png");
+    background-size: cover;
+}
+
+.your-content {
+    width: auto;
+    height: 500px;
+    background: url("../assest/other/screen_whos_on.jpg") no-repeat right bottom;
+    background-size: contain;
+}
+
+.blog ul {
+    margin: 0;
+    padding: 0;
+    display: inline-table;
+
+}
+
+.blog a {
+    display: block;
+
+}
+
+.blog > ul > li {
+
+    display: inline-table;
+    margin: 0;
+    padding: 0;
+    width: 16.689%;
+    height: 400px;
+
+}
+
+.blog a {
+    display: block;
+    height: 400px;
+    width: auto;
+    background: no-repeat center bottom;
+}
+
+
+.blog li:first-child {
+    background-color: #f14848;
+}
+
+.blog li:nth-child(2) > a {
+
+    height: 400px;
+    background-image: url("../assest/blog/ibc_post_EI-750x508.png");
+}
+
+.blog li:nth-child(3) > a {
+    height: 400px;
+    background-image: url("../assest/blog/IMG_9294-750x563.jpeg");
+}
+
+.blog li:nth-child(4) > a {
+    height: 400px;
+    background-image: url("../assest/blog/Image-Blog-Yoav_356121362-copy-750x563.jpg");
+}
+
+.blog li:nth-child(5) > a {
+    height: 400px;
+    background-image: url("../assest/blog/post_tv_connect-750x508.jpeg");
+}
+
+.blog li:nth-child(6) > a {
+    height: 400px;
+    background-image: url("../assest/blog/post_quality-750x508.jpeg");
+}
+
+.dl-middle {
 
 }
 
 .site-footer {
     background-color: #222;
-}
 
+}
 
 .bottom-nav-white > li > a {
     color: white;
