@@ -21,7 +21,7 @@ a:active {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    width: 800px;
+    width: auto;
     height: 300px;
 }
 
@@ -33,9 +33,8 @@ a:active {
 
 .enhace-best {
     display: inline;
-    margin: 0;
-    padding: 0;
-
+  margin: 0;
+    padding 0;
 }
 
 .enhance-any-tv {
@@ -47,6 +46,7 @@ a:active {
 }
 
 .deploy-best {
+
     display: inline-block;
     width: 49%;
     height: 500px;
@@ -55,6 +55,7 @@ a:active {
 }
 
 .your-content {
+    padding-top: 2px;
     width: auto;
     height: 500px;
     background: url("../assest/other/screen_whos_on.jpg") no-repeat right bottom;
@@ -89,7 +90,6 @@ a:active {
     width: auto;
     background: no-repeat center bottom;
 }
-
 
 .blog li:first-child {
     background-color: #f14848;
@@ -130,10 +130,29 @@ a:active {
 
 }
 
+
+.bottom-nav a {
+    color: #7a7a7a;
+}
+
 .bottom-nav-white > li > a {
     color: white;
 }
 
-.bottom-footer > ul > li > a:hover {
+.bottom-nav-white li > ul li a:hover {
+    color: #f14848;
+}
+
+.bottom-nav-white > li > a {
     color: white;
 }
+
+.bottom-footer a {
+    color: #636363;
+}
+
+.bottom-footer a:hover {
+    color: white;
+}
+
+
