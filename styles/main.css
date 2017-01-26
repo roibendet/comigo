@@ -1,4 +1,9 @@
 
+html,
+body {
+    font: 100% "source sans pro", sans-serif;
+}
+
 a {
     text-decoration: none;
 }
@@ -13,6 +18,27 @@ a:focus,
 a:active {
     color: #f14848;
 }
+
+.title-1 {
+    font-size: 1.75rem;
+    text-align: center;
+}
+
+.title-2 {
+    font-size: 3.5rem;
+    text-align: center;
+}
+
+.title-3 {
+    font-size: 2.5rem;
+    text-align: center;
+}
+.p1 {
+    font-size: 1rem;
+    text-align: center;
+}
+
+
 
 .primary-header {
 
@@ -34,7 +60,7 @@ a:active {
 .enhace-best {
     display: inline;
   margin: 0;
-    padding 0;
+    padding-bottom: 100px;
 }
 
 .enhance-any-tv {
@@ -43,12 +69,13 @@ a:active {
     height: 500px;
     background-image: url("../assest/other/home-tv-service-bg1.png");
     background-size: cover;
-}
+    float: left;
+ }
 
 .deploy-best {
 
     display: inline-block;
-    width: 49%;
+    width: 50%;
     height: 500px;
     background-image: url("../assest/other/home-tv-service-bg2.png");
     background-size: cover;
@@ -147,6 +174,9 @@ a:active {
     color: white;
 }
 
+.bottom-footer {
+    background-color: #151515;
+}
 .bottom-footer a {
     color: #636363;
 }
