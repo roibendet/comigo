@@ -19,27 +19,13 @@ a:active {
     color: #f14848;
 }
 
-.title-1 {
-    font-size: 1.75rem;
-    text-align: center;
+.main-menu * {
+    text-transform: uppercase;
+
 }
-
-.title-2 {
-    font-size: 3.5rem;
-    text-align: center;
+.mainul > li > a {
+    text-transform: none;
 }
-
-.title-3 {
-    font-size: 2.5rem;
-    text-align: center;
-}
-.p1 {
-    font-size: 1rem;
-    text-align: center;
-}
-
-
-
 .primary-header {
 
     border: 1px solid red;
@@ -51,15 +37,77 @@ a:active {
     height: 300px;
 }
 
+.title-1 {
+    font-size: 1.75rem;
+    text-align: center;
+}
+
+.title-2 {
+    font-size: 3.5rem;
+    text-align: center;
+}
+
 .second-section {
+    text-align: center;
     background-color: white;
     height: 300px;
-
 }
+
+.title-3 { /*why comigo ?*/
+
+    text-align: center;
+    font-size: 3rem;
+    text-transform: uppercase;
+    margin: 0;
+    padding-top: 6%;
+}
+
+.p1 { /* Comigo redefines the TV*/
+    font-size: 1.2rem;
+    margin: 0;
+    padding-top: 2%;
+    padding-bottom: 3%;
+    line-height: 1.9rem;
+}
+
+.third-section {
+    display: inline-block;
+}
+
+.third-section > h3 {
+    font-size: 2rem;
+    width: 15%;
+    padding-left: 12%;
+    text-transform: uppercase;
+    display: block;
+    text-align: left;
+    border: dashed;
+    margin-bottom: 0;
+}
+
+.third-section p {
+    font-size: 1rem;
+    border: dashed;
+    display: inline;
+    padding-left: 12%;
+    width: 1%;
+    margin: 0;
+}
+
+/*.dl-middle dt  {*/
+    /*display: inline-table;*/
+    /*padding-left: 42.5%;*/
+    /*text-transform: uppercase;*/
+    /*width: %;*/
+/*}*/
+/*.dl-middle dd {*/
+    /*display: inline;*/
+    /*padding-left: 70%;*/
+/*}*/
 
 .enhace-best {
     display: inline;
-  margin: 0;
+    margin: 0;
     padding-bottom: 100px;
 }
 
@@ -69,8 +117,8 @@ a:active {
     height: 500px;
     background-image: url("../assest/other/home-tv-service-bg1.png");
     background-size: cover;
-    float: left;
- }
+
+}
 
 .deploy-best {
 
@@ -157,7 +205,6 @@ a:active {
 
 }
 
-
 .bottom-nav a {
     color: #7a7a7a;
 }
@@ -177,6 +224,7 @@ a:active {
 .bottom-footer {
     background-color: #151515;
 }
+
 .bottom-footer a {
     color: #636363;
 }
