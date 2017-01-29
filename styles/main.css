@@ -11,10 +11,12 @@ body {
 a {
     text-decoration: none;
 }
+
 a:link,
 a:visited {
     color: #3d3d3d;
 }
+
 a:hover,
 a:focus,
 a:active {
@@ -34,67 +36,73 @@ a:active {
     background-color: #f14848;
 }
 
-
 /* Top part of the site */
 
 .header {
 
     position: fixed;
-    display: inline-block;
+    display: block;
     background-color: white;
     width: 100%;
     height: 75px;
     padding: 0;
     margin: 0;
+    border: 0;
 }
+
 .header > a {
-    display: inline;
+    display: block;
 
 }
-.main-menu * {
+
+.main-nav * {
     text-transform: uppercase;
 
 }
-.main-menu-ul {
+
+.main-nav-ul {
 
     display: inline-block;
     margin-top: 0;
     margin-bottom: 10px;
 
-    /*float: right;*/
 }
-.main-menu-ul li {
-    display: inline-block;
 
+.main-nav-ul li {
+    display: inline-block;
 }
-.main-menu-ul > li:nth-child(2) > ul,
-.main-menu-ul > li:nth-child(4) > ul {
+
+.main-nav-ul > li:nth-child(2) > ul,
+.main-nav-ul > li:nth-child(4) > ul {
     display: none;
 }
-.main-menu-ul > li > a {
+
+.main-nav-ul > li > a {
     text-transform: none;
 }
 
 /* First Section */
 
 .first-section {
-
+    color: white;
+    width: auto;
+    height: 520px;
     border: 1px solid red;
     background-image: url("../assest/other/homepage-featured-new-1920x745.jpg");
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: cover;
-    width: auto;
-    height: 520px;
+    background-size: auto 100%;
     text-align: center;
-
 }
 
 .first-section-h1 {
     font-size: 1.75rem;
+
     text-align: center;
+    padding-top: 13%;
     padding-bottom: 0;
 }
+
 .first-section-h2 {
     font-size: 3.5rem;
     text-align: center;
@@ -111,7 +119,7 @@ a:active {
     height: 300px;
 }
 
-.title-3 { /*why comigo ?*/
+.second-section-h3 { /*why comigo ?*/
 
     text-align: center;
     font-size: 3rem;
@@ -120,13 +128,15 @@ a:active {
     padding-top: 6%;
 }
 
-.p1 { /* Comigo redefines the TV*/
+.second-section-p { /* Comigo redefines the TV*/
     font-size: 1.2rem;
     margin: 0;
     padding-top: 2%;
     padding-bottom: 3%;
     line-height: 1.9rem;
 }
+
+/* Third Section*/
 
 .third-section {
     display: inline-block;
@@ -156,43 +166,64 @@ dt {
     text-transform: uppercase;
 }
 
-.your-content h3,
-.your-content a {
-    text-transform: uppercase;
-}
+/* Forth Section*/
 
-.enhace-best {
+.forth-section {
     display: inline;
-    /*margin: inherit;*/
-    padding-bottom: 100px;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+.forth-section h3,
+.forth-section a {
+    text-transform: uppercase;
 
 }
 
-.enhace-best h3,
-.enhace-best a {
+.forth-section-div1 {
+    display: inline-block;
+    width: 50%;
+    height: 600px;
+    background-image: url("../assest/other/ic_EI_cloud_2_home_page.png"), url("../assest/other/home-tv-service-bg1.png");
+    background-repeat: no-repeat, no-repeat;
+    background-size: 320px 240px, 100% 100%;
+    background-position: left 145px top 80px, left top;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    text-align: left;
+}
+
+.forth-section-div2 {
+    display: inline-block;
+    width: 50%;
+    height: 600px;
+    background-image: url("../assest/other/ic-stb-screens.png"), url("../assest/other/home-tv-service-bg2.png");
+    background-repeat: no-repeat, no-repeat;
+    background-size: 280px 280px, 100% 100%;
+    background-position: left 60px top 40px, left top;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    text-align: left;
+
+}
+
+/*.div1 {
+    display: inline-block;
+        padding-top: 50%;
+        padding-left: 25%;
+}*/
+
+/* Fifth Section*/
+
+.fifth-section h3,
+.fifth-section a {
     text-transform: uppercase;
 }
 
-.enhance-any-tv {
-    display: inline-block;
-    width: 50%;
-    height: 500px;
-    background-image: url("../assest/other/home-tv-service-bg1.png");
-    background-size: cover;
-
-}
-
-.deploy-best {
-
-    display: inline-block;
-    width: 50%;
-    height: 500px;
-    background-image: url("../assest/other/home-tv-service-bg2.png");
-    background-size: cover;
-
-}
-
-.your-content {
+.fifth-section {
     padding-top: 2px;
     width: auto;
     height: 500px;
@@ -200,7 +231,9 @@ dt {
     background-size: contain;
 }
 
-.before-blog h3 {
+/* Sixth Section */
+
+.sixth-section h3 {
     text-transform: uppercase;
 }
 
@@ -208,22 +241,23 @@ dt {
     text-transform: uppercase;
 }
 
-.blog ul {
+/* Blog Section */
+
+.blog a {
+    display: block;
+    height: 400px;
+    width: auto;
+    background: no-repeat center bottom;
+}
+
+.blog-ul {
     margin: 0;
     padding: 0;
     display: inline-table;
 
 }
 
-.blog a {
-    display: block;
-}
-
-.blog li:first-child {
-    text-transform: uppercase;
-}
-
-.blog > ul > li {
+.blog-ul > li {
 
     display: inline-table;
     margin: 0;
@@ -234,53 +268,52 @@ dt {
 
 }
 
-.blog a {
-    display: block;
-    height: 400px;
-    width: auto;
-    background: no-repeat center bottom;
+.blog li:first-child {
+    text-transform: uppercase;
 }
 
-.blog li:first-child {
+.blog-ul li:first-child {
     background-color: #f14848;
 }
 
-.blog li:nth-child(2) > a {
+.blog-ul li:nth-child(2) > a {
 
     height: 400px;
     background-image: url("../assest/blog/ibc_post_EI-750x508.png");
 }
 
-.blog li:nth-child(3) > a {
+.blog-ul li:nth-child(3) > a {
     height: 400px;
     background-image: url("../assest/blog/IMG_9294-750x563.jpeg");
 }
 
-.blog li:nth-child(4) > a {
+.blog-ul li:nth-child(4) > a {
     height: 400px;
     background-image: url("../assest/blog/Image-Blog-Yoav_356121362-copy-750x563.jpg");
 }
 
-.blog li:nth-child(5) > a {
+.blog-ul li:nth-child(5) > a {
     height: 400px;
     background-image: url("../assest/blog/post_tv_connect-750x508.jpeg");
 }
 
-.blog li:nth-child(6) > a {
+.blog-ul li:nth-child(6) > a {
     height: 400px;
     background-image: url("../assest/blog/post_quality-750x508.jpeg");
 }
+
+/* Footer */
 
 .site-footer-up {
     width: 100%;
     background-color: #1e2024;
 }
 
-.bottom-nav {
+.site-footer-nav {
     background-color: #1e2024;
 }
 
-.bottom-nav a {
+.site-footer-nav a {
     color: #7a7a7a;
 }
 
@@ -290,10 +323,6 @@ dt {
 
 .bottom-nav-white li > ul li a:hover {
     color: #f14848;
-}
-
-.bottom-nav-white > li > a {
-    color: white;
 }
 
 .center-content {
