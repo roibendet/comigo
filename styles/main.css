@@ -23,9 +23,11 @@ a:active {
     text-transform: uppercase;
 
 }
+
 .mainul > li > a {
     text-transform: none;
 }
+
 .primary-header {
 
     border: 1px solid red;
@@ -35,16 +37,27 @@ a:active {
     background-size: cover;
     width: auto;
     height: 300px;
+    text-align: center;
+}
+
+.primary-header a {
+    text-transform: uppercase;
+    margin: 0;
+
 }
 
 .title-1 {
     font-size: 1.75rem;
     text-align: center;
+    padding-bottom: 0;
 }
 
 .title-2 {
     font-size: 3.5rem;
     text-align: center;
+    padding-top: 0;
+    line-height: 0;
+    padding-bottom: 2%;
 }
 
 .second-section {
@@ -94,21 +107,35 @@ a:active {
     margin: 0;
 }
 
+dt {
+    text-transform: uppercase;
+}
+
+.your-content h3,
+.your-content a {
+    text-transform: uppercase;
+}
+
 /*.dl-middle dt  {*/
-    /*display: inline-table;*/
-    /*padding-left: 42.5%;*/
-    /*text-transform: uppercase;*/
-    /*width: %;*/
+/*display: inline-table;*/
+/*padding-left: 42.5%;*/
+/*text-transform: uppercase;*/
+/*width: %;*/
 /*}*/
 /*.dl-middle dd {*/
-    /*display: inline;*/
-    /*padding-left: 70%;*/
+/*display: inline;*/
+/*padding-left: 70%;*/
 /*}*/
 
 .enhace-best {
     display: inline;
     margin: 0;
     padding-bottom: 100px;
+}
+
+.enhace-best h3,
+.enhace-best a {
+    text-transform: uppercase;
 }
 
 .enhance-any-tv {
@@ -137,6 +164,14 @@ a:active {
     background-size: contain;
 }
 
+.before-blog h3 {
+    text-transform: uppercase;
+}
+
+.schedule {
+    text-transform: uppercase;
+}
+
 .blog ul {
     margin: 0;
     padding: 0;
@@ -146,7 +181,10 @@ a:active {
 
 .blog a {
     display: block;
+}
 
+.blog li:first-child {
+    text-transform: uppercase;
 }
 
 .blog > ul > li {
