@@ -368,7 +368,7 @@ dt {
 }
 
 .bottom-logo {
-   background-image: url(http://www.comigo.com/wp-content/themes/comigo/images/comigo-logo.png);
+   background-image: url("../assest/logo/comigo-logo-white.png");
     background-repeat: no-repeat;
     background-position: top right;
     background-size: auto;
