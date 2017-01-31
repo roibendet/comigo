@@ -137,13 +137,14 @@ a:active {
 
 .first-section {
     color: white;
-    width: auto;
-    height: 520px;
+    width: 100vw;
+    height: 40vw;
+    /*height: 520px;*/
 
     background-image: url("../assest/other/homepage-featured-new-1920x745.jpg");
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: cover;
+    background-size: 100vw;
     text-align: center;
     margin-top: 66px;
 }
@@ -153,7 +154,7 @@ a:active {
 }
 
 .first-section-h1 {
-    font-size: 1.75rem;
+    font-size: 2vw;
 
     text-align: center;
     padding-top: 13%;
@@ -161,7 +162,7 @@ a:active {
 }
 
 .first-section-h2 {
-    font-size: 3.5rem;
+    font-size: 3.5vw;
     text-align: center;
     padding-top: 0;
     line-height: 0;
