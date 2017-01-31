@@ -110,6 +110,7 @@ a:active {
     display: inline-block;
     float: right;
     padding: 0;
+    /*width: 100vw;*/
 }
 
 .main-nav * {
@@ -150,18 +151,20 @@ a:active {
 .first-section {
     color: white;
     width: 100vw;
-    height: 80vh;
+    height: 38.8vw;
     /*height: 520px;*/
 
     background-image: url("../assest/other/homepage-featured-new-1920x745.jpg");
-    background-repeat: no-repeat;
+    /*background-repeat: no-repeat;*/
     background-position: top center;
     /*background-position: center center;*/
-    background-size: 100vw;
+    /*background-size: 100vw ;*/
+    /*background-size: contain;*/
+    background-size: contain;
     text-align: center;
     margin-top: 66px;
-
-    /*margin-top: 10vh;*/
+    /*padding-top: 13%;*/
+    /*margin-top: 25vh;*/
 }
 
 .first-section * {
