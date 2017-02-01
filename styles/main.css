@@ -36,11 +36,6 @@ a:active {
     color: #f14848;
 }
 
-/*.main-nav-ul > li:first-child > a {
-    font-weight: bold;
-    color: #f14848;
-    display: block;
-}*/
 /*Buttons*/
 
 .white-btn.white-btn {
@@ -94,10 +89,6 @@ a:active {
 }
 
 /*
--------------------------Nav-----------------------
- */
-
-/*
 ----------------------First Stage Of Nav--------------
  */
 .main-nav {
@@ -105,17 +96,25 @@ a:active {
     clear: both;
     text-transform: uppercase;
 }
+
 .main-nav-ul {
     display: inline;
     padding: 0 8px;
     list-style: none;
 }
+
+.main-nav-ul ul {
+    display: none;
+    list-style: none;
+}
+
 .main-nav-ul > li {
     float: left;
     padding-left: 0.13rem;
     padding-right: 0.13rem;
     /*outline: 2px red solid;*/
 }
+
 .main-nav-ul > li > a {
     text-transform: none;
     display: block;
@@ -124,6 +123,7 @@ a:active {
     padding-left: 0.6rem;
     padding-right: 0.6rem;
 }
+
 .main-nav-ul > li:hover > ul {
     display: inline;
     position: absolute;
@@ -134,21 +134,24 @@ a:active {
     padding: 0;
 }
 
+span {
+    line-height: 1;
+    display: inline-block;
+    vertical-align: middle;
+}
+
 /*
 ----------------------Second Stage Of Nav--------------
  */
 .mid-nav * {
     padding: 0;
 }
-.mid-nav,
-.deep-menu{
-    display: none;
-     list-style: none;
-}
+
 .mid-nav > li {
     width: 33.3333333%;
     float: left;
 }
+
 .mid-nav > li > a {
     line-height: 150px;
     font-size: 1.8rem;
@@ -156,17 +159,23 @@ a:active {
     display: block;
     text-align: center;
 }
+
 .mid-nav > li:hover > a {
     color: white;
     background-color: #F14848;
 }
+
 .mid-nav > li:hover > ul {
-    display:  inline;
+    display: inline;
     position: absolute;
     left: 0;
     width: 100%;
     background-color: white;
 }
+
+/*
+---------------------Third Stage Of Nav----------------
+ */
 .deep-menu > li > a {
     display: block;
     width: 50%;
@@ -175,22 +184,21 @@ a:active {
     float: left;
     text-align: center;
 }
+
 .deep-menu > li:hover > a {
     display: inline-block;
     color: white;
     background-color: #F14848;
     font-size: 1.8rem;
 }
-span {
-    line-height:1;
-    display: inline-block;
-    vertical-align: middle;
-}
+
 /*
 ---------------------End Of Nav------------------------
  */
 
-/* First Section */
+/*
+--------------------First Section----------------------
+ */
 
 .first-section {
     color: white;
@@ -223,8 +231,9 @@ span {
     margin: 0;
 }
 
-/* Second Section */
-
+/*
+--------------------Second Section---------------------
+ */
 .second-section {
     text-align: center;
     /*background-color: darkgrey;*/
@@ -251,7 +260,9 @@ span {
     line-height: 1.9rem;
 }
 
-/* Third Section*/
+/*
+ ---------------------Third Section--------------------
+ */
 
 .third-section {
     display: block;
@@ -335,8 +346,9 @@ dt {
     display:inline
 }*/
 
-/* Forth Section*/
-
+/*
+----------------------Forth Section--------------------
+*/
 .forth-section {
     display: inline;
     padding: 0;
@@ -403,8 +415,9 @@ dt {
 
 }
 
-/* Fifth Section*/
-
+/*
+----------------------Fifth Section--------------------
+*/
 .fifth-section h3,
 .fifth-section a {
     text-transform: uppercase;
@@ -418,8 +431,9 @@ dt {
     background-size: contain;
 }
 
-/* Sixth Section */
-
+/*
+----------------------Sixth Section---------------------
+*/
 .sixth-section {
     width: 100%;
     height: 40.5vw;
@@ -537,7 +551,9 @@ dt {
     float: right;
 }
 
-/* Blog Section */
+/*
+---------------------Blog Section-----------------------
+ */
 .blog {
     display: block;
     height: 475px;
@@ -616,8 +632,9 @@ dt {
     background-image: url("../assest/blog/post_quality-750x508.jpeg");
 }
 
-/* Footer */
-
+/*
+--------------------------Footer-----------------------
+ */
 .site-footer {
     display: inline;
     margin: 0;
