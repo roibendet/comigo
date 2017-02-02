@@ -95,6 +95,7 @@ a:active {
     float: right;
     clear: both;
     text-transform: uppercase;
+
 }
 
 .main-nav-ul {
@@ -106,6 +107,8 @@ a:active {
 .main-nav-ul ul {
     display: none;
     list-style: none;
+    font-size: 2.25rem;
+
 }
 
 .main-nav-ul > li {
@@ -134,7 +137,7 @@ a:active {
     padding: 0;
 }
 
-span {
+.main-nav-ul span {
     line-height: 1;
     display: inline-block;
     vertical-align: middle;
@@ -163,6 +166,7 @@ span {
 .mid-nav > li:hover > a {
     color: white;
     background-color: #F14848;
+
 }
 
 .mid-nav > li:hover > ul {
@@ -266,76 +270,66 @@ span {
 
 .third-section {
     display: block;
-    height: 540px;
-    outline: 1px red solid;
+    height: 539px;
+    width: 100%;
+    outline: 2px blue solid;
+    background-color: #636363;
+    position: relative;
+
 }
 
-.third-section h3 {
-    /*display: inline-block;*/
-    font-size: 2rem;
-    width: 50%;
-    text-transform: uppercase;
-    text-align: left;
-    height: auto;
-    padding-top: 15%;
-    font-weight: normal;
-    margin: 0;
-    outline: 1px red solid;
+.third-right {
+    float: right;
+
+    outline: 2px green solid;
+    width: 45.5%;
+    height: 100%;
 }
 
-.third-section p {
-    display: inline-block;
-    padding-top: 4%;
-    font-size: 1rem;
-
-    width: 40%;
-    text-transform: none;
-    margin: 0;
-    outline: 1px red solid;
-}
-
-.h3p {
-    display: inline-block;
-
+.third-left {
+    float: left;
+    height: 100%;
     width: 37.5%;
-    padding-left: 11%;
-    outline: 1px red solid;
+    outline: 2px red solid;
 }
 
-.dl-middle {
-    display: inline-block;
-    width: 10.7em;
-    height: 23rem;
-    text-align: left;
-    font-size: 1.2rem;
-    vertical-align: text-bottom;
-    margin: 0;
-    outline: 1px red solid;
-
+.third-middle {
+    float: left;
+    height: 100%;
+    width: 17%;
+    outline: 2px pink solid;
 }
 
-dt:first-child {
-    padding-top: 2rem;
+
+.third-middle a {
+display: block;
+    line-height: 2rem;
+}
+.third-middle figcaption {
+    text-align: center;
 }
 
-dt {
-    padding-bottom: 1.6rem;
-}
-
-.third-section dt {
-    text-transform: uppercase;
-    display: inline-block;
-
-}
-
-.third-section dd {
+dd {
     display: none;
+    float: right;
+
 }
+
+
+
+dt:hover + dd {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: block;
+}
+
+
 
 /*.dl:hover,
 .dl:active,
 .dl:focus {
-  dl.dl-middle  a {
+  .dl-middle  a {
        display:inline ;
    }
 
@@ -350,10 +344,12 @@ dt {
 ----------------------Forth Section--------------------
 */
 .forth-section {
-    display: inline;
+    display: block;
     padding: 0;
     margin: 0;
     border: 0;
+    height: 84vw;
+    width: 100%;
 }
 
 .forth-section h3,
@@ -362,6 +358,20 @@ dt {
 
 }
 
+.forth-section-div1 {
+    /*display: inline-block;*/
+    float: left;
+    width: 50%;
+    height: 100%;
+    background-image: url("../assest/other/ic_EI_cloud_2_home_page.png"), url("../assest/other/home-tv-service-bg1.png");
+    background-repeat: no-repeat, no-repeat;
+    background-size: 320px 240px, 100% 100%;
+    background-position: left 145px top 80px, left top;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    text-align: left;
+}
 .forth-section-div1 h3 {
     margin: 0;
     padding-top: 55%;
@@ -372,37 +382,20 @@ dt {
     line-height: 2.5rem;
     width: 60%;
 }
-
 .forth-section-div1 p {
     margin-left: 22%;
     color: white;
 }
-
 .forth-section-div1 a {
 
     margin-left: 22%;
     color: #f14848;
 }
-
-.forth-section-div1 {
-    display: inline-block;
-    width: 50%;
-    height: 600px;
-    background-image: url("../assest/other/ic_EI_cloud_2_home_page.png"), url("../assest/other/home-tv-service-bg1.png");
-    background-repeat: no-repeat, no-repeat;
-    background-size: 320px 240px, 100% 100%;
-    background-position: left 145px top 80px, left top;
-    margin: 0;
-    padding: 0;
-    border: 0;
-    text-align: left;
-
-}
-
 .forth-section-div2 {
-    display: inline-block;
+    /*display: inline-block;*/
+    float: right;
     width: 50%;
-    height: 600px;
+    height: 100%;
     background-image: url("../assest/other/ic-stb-screens.png"), url("../assest/other/home-tv-service-bg2.png");
     background-repeat: no-repeat, no-repeat;
     background-size: 280px 280px, 100% 100%;
@@ -572,13 +565,20 @@ dt {
     height: 100%;
     width: 16.66666666666667%;
     float: left;
-    clear: right;
+
 }
 
-.blog a {
+.blog-ul a {
     display: block;
     background: no-repeat center bottom;
     height: 100%;
+    width: 100%;
+    /*line-height: 160px;*/
+    font-size: 1rem;
+    vertical-align: top;
+    outline: 2px blue solid;
+    position: relative;
+
 }
 
 .blog-ul li:nth-child(1) {
@@ -611,6 +611,7 @@ dt {
 
 .blog-ul li:nth-child(2) > a {
     background-image: url("../assest/blog/ibc_post_EI-750x508.png");
+
 }
 
 .blog-ul li:nth-child(3) > a {
@@ -618,18 +619,28 @@ dt {
 }
 
 .blog-ul li:nth-child(4) > a {
-
     background-image: url("../assest/blog/Image-Blog-Yoav_356121362-copy-750x563.jpg");
 }
 
 .blog-ul li:nth-child(5) > a {
-
     background-image: url("../assest/blog/post_tv_connect-750x508.jpeg");
 }
 
 .blog-ul li:nth-child(6) > a {
-
     background-image: url("../assest/blog/post_quality-750x508.jpeg");
+}
+
+.blog-ul span {
+    line-height: 1;
+
+    font-size: 1rem;
+    display: inline;
+    color: #EFEFEF;
+    outline: 2px green solid;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
 }
 
 /*
