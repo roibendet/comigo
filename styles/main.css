@@ -303,11 +303,11 @@ a:active {
 
 .third-middle a {
 display: block;
-    line-height: 2rem;
+    /*line-height: 2rem;*/
 }
-.third-middle figcaption {
+/*.third-middle figcaption {
     text-align: center;
-}
+}*/
 
 dd {
     display: none;
