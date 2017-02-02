@@ -312,7 +312,8 @@ display: block;
 dd {
     display: none;
     float: right;
-
+width: 45.5%;
+    height: 100%;
 }
 
 
