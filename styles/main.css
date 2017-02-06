@@ -57,10 +57,14 @@ a:active {
 .red-btn {
     display: inline-block;
     text-transform: uppercase;
-    font-variant: all-small-caps;
-    border-radius: 50px;
-    padding: 15px 25px;
-    font-size: 1rem;
+    /*font-variant: all-small-caps;*/
+    border-radius: 3.125rem;
+    /*border-radius: 50px;*/
+    /*padding: 15px 25px;*/
+    padding: 0.8rem 1.5rem;
+    font-size: 0.8rem;
+    /*font-size: 1rem;*/
+    vertical-align: middle;
     color: #f14848;
     background-color: white;
 }
@@ -135,9 +139,34 @@ a:active {
     position: absolute;
     top: 66px;
     left: 0;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.9);
     width: 100%;
     padding: 0;
+    animation: opacity linear normal;
+
+
+    animation-name: nav-hover;
+    animation-duration: 300ms ,0.5s;
+    animation-iteration-count: 1 ;
+    animation-timing-function: linear;
+
+    z-index: 50;
+
+}
+
+@keyframes nav-hover {
+
+    from { opacity:0;
+        transform: translateY(-5%) ;
+
+
+    }
+    to { opacity: 1;
+        transform: translateY(0);
+
+    }
+
+
 }
 
 .main-nav-ul span {
@@ -156,6 +185,7 @@ a:active {
 .mid-nav > li {
     width: 33.3333333%;
     float: left;
+    /*position: relative;*/
 }
 
 .mid-nav > li > a {
@@ -167,8 +197,12 @@ a:active {
 }
 
 .mid-nav > li:hover > a {
-    color: white;
-    background-color: #F14848;
+    color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(241, 72, 72, 0.9);
+
+
+
+
 
 }
 
@@ -177,7 +211,33 @@ a:active {
     position: absolute;
     left: 0;
     width: 100%;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.9);
+    animation: opacity linear normal;
+    animation-name: mid-nav-hover;
+    animation-duration: 300ms ,0.5s;
+    animation-iteration-count: 1 ;
+    animation-timing-function: linear;
+
+    z-index: 50;
+
+
+
+
+
+}
+@keyframes mid-nav-hover {
+
+    from { opacity:0;
+        transform: translateY(-5%) ;
+
+
+    }
+    to { opacity: 1;
+        transform: translateY(0);
+
+    }
+
+
 }
 
 /*
@@ -194,8 +254,8 @@ a:active {
 
 .deep-menu > li:hover > a {
     display: inline-block;
-    color: white;
-    background-color: #F14848;
+    color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(241, 72, 72, 0.91);
     font-size: 1.8rem;
 }
 
@@ -247,6 +307,8 @@ a:active {
     padding-top: 4%;
     padding-bottom: 7%;
 
+
+
 }
 
 .second-section-h3 { /*why comigo ?*/
@@ -273,12 +335,42 @@ a:active {
 
 .third-section {
     display: block;
-    height: 539px;
+    height: 39.5vw;
     width: 100%;
     outline: 2px blue solid;
-    background-color: #636363;
+    background-color: rgba(0, 0, 0, 0.47);
+    position: relative;
+
 
 }
+
+/*.fullscreen-bg {
+    !*position: fixed;*!
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    !*overflow: hidden;*!
+    z-index: -100;
+}*/
+
+.fullscreen-bg__video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 39.5;
+    z-index: -50;
+    overflow: hidden;
+}
+
+
+
+
+
+
+
+
 
 /*.third-right {
     float: right;
@@ -288,16 +380,31 @@ a:active {
     height: 100%;
 }*/
 
+.third-left h3 {
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: 1.9rem;
+    width: 50%;
+    color:#8E8F88;
+    margin-top: 14%;
+    margin-bottom: 6%;
+}
+.third-left p{
+    width: 50%;
+    color:#8E8F88;
+    font-size: 1.1rem;
+}
+
 .third-left {
     float: left;
-    height: 100%;
-    width: 37.5%;
+    height: 39.5vw;
+    width: 34%;
     outline: 2px red solid;
 }
 
 .third-middle {
     float: left;
-    height: 100%;
+    height: 39.5vw;
     width: 62.5%;
     outline: 2px pink solid;
     position: relative;
@@ -306,17 +413,26 @@ a:active {
 .third-middle a {
     display: block;
     width: 29%;
-    /*line-height: 2rem;*/
+    font-size: 1.5rem;
+    line-height: 2;
+    text-transform: uppercase;
+    font-weight: 200;
+
 }
 
 /*.third-middle figcaption {
     text-align: center;
 }*/
 
+.third-middle dl {
+    margin-top: 6%
+}
+
 dd {
     display: none;
     width: 45.5%;
     height: 100%;
+    margin: 0;
 }
 
 dt:hover + dd {
@@ -367,8 +483,8 @@ dt:hover + dd {
     height: 100%;
     background-image: url("../assest/other/ic_EI_cloud_2_home_page.png"), url("../assest/other/home-tv-service-bg1.png");
     background-repeat: no-repeat, no-repeat;
-    background-size: 320px 240px, 100% 100%;
-    background-position: left 145px top 80px, left top;
+    background-size: 320px 255px, 100% 100%;
+    background-position: left 150px top 55px, left top;
     margin: 0;
     padding: 0;
     border: 0;
@@ -377,24 +493,28 @@ dt:hover + dd {
 
 .forth-section-div1 h3 {
     margin: 0;
-    padding-top: 55%;
+    padding-top: 52%;
     padding-left: 22%;
-    font-size: 2rem;
+    font-size: 2.1rem;
     font-weight: normal;
     color: white;
     line-height: 2.5rem;
     width: 60%;
+
 }
 
 .forth-section-div1 p {
     margin-left: 22%;
     color: white;
+    font-size: 0.95rem;
+    margin-top: 0.3%;
 }
 
 .forth-section-div1 a {
 
     margin-left: 22%;
     color: #f14848;
+    margin-top: 1%;
 }
 
 .forth-section-div2 {
@@ -405,12 +525,31 @@ dt:hover + dd {
     background-image: url("../assest/other/ic-stb-screens.png"), url("../assest/other/home-tv-service-bg2.png");
     background-repeat: no-repeat, no-repeat;
     background-size: 280px 280px, 100% 100%;
-    background-position: left 60px top 40px, left top;
+    background-position: left 52px top 40px, left top;
     margin: 0;
     padding: 0;
     border: 0;
     text-align: left;
 
+}
+
+.forth-section-div2 h3 {
+    padding-left: 8%;
+    font-weight: lighter;
+    padding-top: 52%;
+    padding-bottom: 1.5%;
+    margin: 0;
+    font-size: 2rem;
+    color: #3D3D3D;
+}
+.forth-section-div2 p {
+    padding-left: 8%;
+    margin: 0;
+    padding-bottom: 3%;
+    color: #3D3D3D;
+}
+.forth-section-div2 a {
+    margin-left: 8%;
 }
 
 /*
@@ -679,14 +818,15 @@ dt:hover + dd {
     /*margin-top: 1.56vw;*/
     /*margin-top: 25px;*/
 
-    outline: 2px pink solid;
+    /*outline: 2px pink solid;*/
 }
 
 .nav-footer {
     width: 74%;
     height: 100%;
+    position: relative;
 
-    outline: 2px red solid;
+    /*outline: 2px red solid;*/
 display: block;
 
 
@@ -706,22 +846,25 @@ display: block;
     background-position: top right;
     background-size: auto;
 
-    outline: 1px red solid;
-    /*position: absolute;*/
+    /*outline: 1px red solid;*/
+    position: absolute;
     /*right:82px;*/
     /*right: 5.125vw;*/
     /*top: 74px;*/
     /*top: 4.625vw;*/
+    top:0;
+    right:0;
 }
 
 .nav-ul-main-bottom {
     list-style: none;
     display: inline;
     /*outline: 2px pink solid;*/
-    height: 100%;
+    height: 3.587vw;
     width: 100%;
     padding: 0;
     margin: 0;
+
 }
 
 .nav-ul-main-bottom > li {
@@ -785,12 +928,18 @@ display: block;
     margin: 0;
     padding: 0;
     border: 0;
+    line-height: 4;
+    width: 100%;
+    height: 100%;
+    font-size: 0.725rem;
+    display: inline;
 }
 
 .site-footer-bottom ul {
     padding: 0;
     border: 0;
     margin: 0;
+
 }
 
 .site-footer-bottom-background {
@@ -802,14 +951,7 @@ display: block;
     border: 0;
 }
 
-.site-footer-bottom {
-    display: inline;
-    width: 100%;
-    height: 100%;
-    padding: 0;
-    margin: 0;
-    border: 0;
-}
+
 
 .site-footer-bottom a {
 
@@ -817,7 +959,20 @@ display: block;
     height: 100%;
     vertical-align: baseline;
 }
+.site-footer-bottom a:hover {
+    color:white;
 
+}
+
+.site-footer-bottom-left > ul > li:not(:first-child)  {
+    padding-left:0.9vw;
+
+}
+.site-footer-bottom-left > ul > li:not(:first-child)::before  {
+    padding-right: 0.9vw;
+    content: '|';
+    color: #7a7a7a;
+}
 .site-footer-bottom-left {
     display: inline-block;
     height: 100%;
@@ -825,51 +980,62 @@ display: block;
     /*outline: 2px solid blue;*/
     /*float: left;*/
 }
-
+.site-footer-bottom p {
+    color:#7a7a7a;
+}
 .site-footer-bottom-left p {
     display: inline;
 }
-
 .site-footer-bottom-left > ul > li {
     display: inline;
 }
-
 .site-footer-bottom-right {
-    display: inline-block;
+    /*display: inline-block;*/
+    float: right;
     height: 100%;
     width: 50%;
     /*float: right;*/
-    line-height: 100%;
+    line-height: 4;
     /*outline: 2px green solid;*/
-}
 
+    list-style: none;
+    vertical-align: bottom;
+    margin: 0;
+    padding: 0;
+    border: 0;
+
+    font-size: 0.725rem;
+    display: inline;
+
+
+
+}
 .site-footer-bottom-right ul {
     display: block;
     width: 100%;
     height: 100%;
-}
 
+}
 .site-footer-bottom-right > div {
-    /*float: right;*/
+    float: right;
 }
-
+.site-footer-bottom-right > div > ul > li:first-child {
+    margin-right: 40px ;
+}
 .site-footer-bottom-right ul li {
     display: inline;
     /*outline: 2px pink solid;*/
 
 }
-
 .site-footer-bottom-right ul > li > p {
     display: inline;
     padding: 0;
     margin: 0;
     border: 0;
 }
-
 .bottom-footer a {
     color: #636363;
 }
-
 .bottom-footer a:hover {
     color: white;
 }
@@ -883,7 +1049,8 @@ display: block;
 
 .center-content {
     width: 90%;
-    max-width: 1230px;
+    /*max-width: 1230px;*/
+    max-width: 1050px;
     /*width: 90vw;*/
     margin: 0 auto;
     border: 0;
