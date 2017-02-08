@@ -116,8 +116,9 @@ input {
 
 .first-section {
   color: white;
-  height: 38.32vw;
+  /*height: 38.32vw;*/
   display: block;
+  height: 100%;
   background-image: url("../assest/other/homepage-featured-new-1920x745.jpg");
   background-repeat: no-repeat;
   background-position: top center;
@@ -145,7 +146,9 @@ input {
 }
 
 .first-section > header > a {
-  margin: 21px;
+  /*margin: 21px;
+  margin-bottom: 0;*/
+  margin-top: 2%;
   transition-property: box-shadow, transform;
   transition-duration: 0.2s, 0.2s;
 }
@@ -1151,6 +1154,11 @@ dt:hover + dd {
 }
 
 @media (max-width: 700px) {
+.first-section  {
+  background-position: center center;
+  height: 50vw;
+  padding-top: 35%;
+ }
 /*  html h1 {
     font-size: initial;
   }
