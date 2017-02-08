@@ -130,6 +130,10 @@ a:active {
   padding-right: 0.13rem;
   /*outline: 2px red solid;*/
 
+  transition-property: transform, opacity, z-index;
+  transition-duration: 0.3s, 0.3s, 1s;
+
+
 }
 
 .main-nav-ul > li > a {
@@ -145,16 +149,16 @@ a:active {
 .main-nav-ul > li > ul {
   opacity: 0;
   transition-property: transform, opacity, z-index;
-  transition-duration: 0.3s, 0.3s, 0s;
+  transition-duration: 0.3s, 0.3s, 1s;
   list-style: none;
   position: absolute;
   top: 0;
   left: 0;
-  background-color: rgba(255, 255, 255, 0.98);
+  background-color: rgba(255, 255, 255, 0.99);
   width: 100%;
   padding: 0;
 
-  z-index: 0;
+  z-index: -100;
 
 }
 
@@ -163,10 +167,10 @@ a:active {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: rgba(255, 255, 255, 0.98);
+  background-color: rgba(255, 255, 255, 0.99);
   width: 100%;
   padding: 0;
-  opacity: 0.98;
+  opacity: 0.99;
   transform: translateY(66px);
   z-index: 10;
 
@@ -197,26 +201,34 @@ a:active {
   font-weight: normal;
   display: block;
   text-align: center;
+  transition-property: background, color;
+  transition-duration: 0.5s,0.5s;
+
+
+
+
+
 }
 
 .mid-nav > li:hover > a {
   color: rgba(255, 255, 255, 0.98);
-  background-color: rgba(241, 72, 72, 0.98);
+  background-color: rgba(241, 72, 72, 0.99);
 
 }
 
 .mid-nav > li > ul {
 
   opacity: 0;
-
+display: inline-block;
   /*transition: transform;*/
-  transition-duration: 3s;
-  transition-property: transform, opacity;
+  transition-duration: 0.3s, 0.3s, 1s;
+  transition-property: transform, opacity, z-index;
   list-style: none;
   position: absolute;
   top: 0;
   left: 0;
-  transition: all;
+  z-index: -100;
+
 }
 
 .mid-nav > li:hover > ul {
@@ -225,10 +237,10 @@ a:active {
   left: 0;
   top: 0;
   width: 100%;
-  background-color: rgba(255, 255, 255, 0.98);
-  opacity: 0.98;
+  background-color: rgba(255, 255, 255, 0.99);
+  opacity: 0.99;
   transform: translateY(100%);
-  transition: all;
+z-index: 10;
 
 }
 
@@ -242,12 +254,15 @@ a:active {
   font-size: 1.8rem;
   float: left;
   text-align: center;
+
+  transition-property: background, color;
+  transition-duration: 0.5s,0.5s;
 }
 
 .deep-menu > li:hover > a {
   display: inline-block;
   color: rgba(255, 255, 255, 0.9);
-  background-color: rgba(241, 72, 72, 0.91);
+  background-color: rgba(241, 72, 72, 0.99);
   font-size: 1.8rem;
 }
 
