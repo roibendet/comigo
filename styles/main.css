@@ -87,6 +87,7 @@ a:active {
   padding-left: 1.7rem;
   margin: 0;
   z-index: 100;
+  box-shadow: 0 0 20px 1px rgba(21,21,21,0.81);
 }
 
 .logo-top {
@@ -969,6 +970,7 @@ dt:hover + dd {
     display: inline;
     padding: 0 8px;
     list-style: none;
+
   }
 
   .main-nav-ul > li > ul > li > ul {
@@ -1013,6 +1015,7 @@ dt:hover + dd {
     padding: 0;
 
     z-index: -100;
+
 
   }
 
@@ -1180,19 +1183,30 @@ dt:hover + dd {
     top: 66px;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 90vw;
     overflow: auto;
+
+
   }
+
   .menu-link:checked ~ .main-nav * {
     list-style: none;
     line-height: 200%;
     text-transform: capitalize;
     font-size: 1.1rem;
-
-    padding: 0;
+        padding: 0;
     border: 0;
     margin: 0;
+
   }
+  .menu-link:checked ~ .main-nav-ul {
+     height: 100%;
+   }
+  .menu-link:checked ~ .main-nav-ul > li:last-of-type > a {
+    height: 95%;
+    padding-bottom: 20px;
+  }
+
   .menu-link:checked ~ .main-nav > ul li {
     padding-left: 5%;
     /*display: block;*/
@@ -1216,11 +1230,11 @@ dt:hover + dd {
   ---------700-------First Section-------------------------
    */
   .first-section h1 {
-    font-size: 1.2rem;
+    font-size: 0.8rem;
   }
 
   .first-section h2 {
-    font-size: 2rem;
+    font-size: 1.3rem;
   }
 }
 
