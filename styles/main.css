@@ -204,14 +204,21 @@ input {
 
 .third-section {
   display: block;
+  /*height: 100%;*/
   height: 39.5vw;
-  width: 100%;
+  /*width: 100%;*/
   outline: 2px blue solid;
   background-color: rgba(0, 0, 0, 0.47);
   position: relative;
+/*  padding-top: 5%;
+  padding-bottom: 5%;*/
+
 
 }
-
+/*.third-section > div > div {
+  padding-top: 5%;
+  padding-bottom: 5%;
+}*/
 /*.fullscreen-bg {
     !*position: fixed;*!
     top: 0;
@@ -221,8 +228,7 @@ input {
     !*overflow: hidden;*!
     z-index: -100;
 }*/
-
-.fullscreen-bg__video {
+/*.fullscreen-bg__video {
   position: absolute;
   top: 0;
   left: 0;
@@ -230,8 +236,7 @@ input {
   height: 39.5vw;
   z-index: -50;
   overflow: hidden;
-}
-
+}*/
 /*.third-right {
     float: right;
 
@@ -239,7 +244,10 @@ input {
     width: 45.5%;
     height: 100%;
 }*/
-
+/*.third-left * {
+  padding-top: 5%;
+  padding-bottom: 5%;
+}*/
 .third-left h3 {
   font-weight: normal;
   text-transform: uppercase;
@@ -266,7 +274,7 @@ input {
 .third-middle {
   float: left;
   height: 39.5vw;
-  width: 62.5%;
+  width: 66%;
   outline: 2px pink solid;
   position: relative;
 }
@@ -286,7 +294,7 @@ input {
 }*/
 
 .third-middle dl {
-  margin-top: 6%
+  padding-top: 4.5%
 }
 
 dd {
@@ -295,15 +303,41 @@ dd {
   height: 100%;
   margin: 0;
 }
+.third-dl {
+  height: 100%;
+}
 
 dt:hover + dd {
   position: absolute;
   right: 0;
   top: 0;
   display: block;
-  width: 62.5%;
+  width: 70%;
+  height: 100%;
+  z-index: 10;
+  padding-top: 6%;
+  padding-bottom: 5%;
+}
+dd > figure {
   height: 100%;
 }
+
+dd > figure > figcaption {
+  color: #ededed;
+  text-align: center;
+}
+
+dd > figure > img {
+  height: 100%;
+  width: 100%;
+  padding-top: 5%;
+  padding-bottom: 20%;
+  padding-left: 15%;
+  padding-right: 15%;
+  margin: 0 auto;
+}
+
+
 
 /*.dl:hover,
 .dl:active,
@@ -1014,7 +1048,7 @@ dt:hover + dd {
     transition-duration: 0.3s, 0.3s, 1s;
     list-style: none;
     position: absolute;
-    top: 0;
+    top: -100%;
     left: 0;
     background-color: rgba(255, 255, 255, 0.99);
     width: 100%;
