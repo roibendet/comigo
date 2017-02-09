@@ -206,14 +206,17 @@ input {
   display: block;
   /*height: 100%;*/
   height: 39.5vw;
-  /*width: 100%;*/
+  width: 100%;
   outline: 2px blue solid;
   background-color: rgba(0, 0, 0, 0.47);
   position: relative;
 /*  padding-top: 5%;
   padding-bottom: 5%;*/
 
+}
 
+.third-section > div {
+  height: 100%;
 }
 /*.third-section > div > div {
   padding-top: 5%;
@@ -254,8 +257,9 @@ input {
   font-size: 1.9rem;
   width: 50%;
   color: #8E8F88;
-  margin-top: 14%;
-  margin-bottom: 6%;
+/*  margin-top: 14%;
+  margin-bottom: 6%;*/
+  margin: 0;
 }
 
 .third-left p {
@@ -266,14 +270,14 @@ input {
 
 .third-left {
   float: left;
-  height: 39.5vw;
+  height: 100%;
   width: 34%;
   outline: 2px red solid;
 }
 
 .third-middle {
   float: left;
-  height: 39.5vw;
+  height: 100%;
   width: 66%;
   outline: 2px pink solid;
   position: relative;
@@ -294,7 +298,10 @@ input {
 }*/
 
 .third-middle dl {
-  padding-top: 4.5%
+  /*padding-top: 4.5%;*/
+  height: 100%;
+  outline: blue solid 2px;
+  margin:0;
 }
 
 dd {
@@ -302,6 +309,7 @@ dd {
   width: 45.5%;
   height: 100%;
   margin: 0;
+  padding: 0;
 }
 .third-dl {
   height: 100%;
@@ -309,14 +317,15 @@ dd {
 
 dt:hover + dd {
   position: absolute;
-  right: 0;
+  right: -10%;
   top: 0;
   display: block;
   width: 70%;
-  height: 100%;
+  /*height: 100%;*/
   z-index: 10;
-  padding-top: 6%;
-  padding-bottom: 5%;
+  /*padding-top: 6%;*/
+  /*padding-bottom: 5%;*/
+  outline: 2px solid grey;
 }
 dd > figure {
   height: 100%;
@@ -328,10 +337,10 @@ dd > figure > figcaption {
 }
 
 dd > figure > img {
-  height: 100%;
+  /*height: 100%;*/
   width: 100%;
   padding-top: 5%;
-  padding-bottom: 20%;
+  padding-bottom: 10%;
   padding-left: 15%;
   padding-right: 15%;
   margin: 0 auto;
@@ -1189,7 +1198,7 @@ dd > figure > img {
 
 @media (max-width: 700px) {
 .first-section  {
-  background-position: center center;
+  background-position: top center;
   height: 50vw;
   padding-top: 35%;
  }
@@ -1211,8 +1220,10 @@ dd > figure > img {
  */
   .main-nav {
     transform: translateY(-1000%);
-    transition-property: transform;
-    transition-duration: 0.5s;
+    transition-property: transform, z-index;
+    transition-duration: 0.5s, 1s;
+    position: inherit;
+    z-index: -100;
   }
   .menu-link,
   label {
@@ -1226,6 +1237,7 @@ dd > figure > img {
     display: inline-block;
     float: none;
     position: static;
+    z-index: 100;
   }
   .menu-link:checked ~ .main-nav {
 
@@ -1236,8 +1248,10 @@ dd > figure > img {
     top: 66px;
     left: 0;
     width: 100%;
-    height: 100vw;
+    height: calc(100vh - 66px);
+    /*height: 100vw;*/
     overflow: auto;
+    z-index: 50;
 
 
   }
