@@ -39,7 +39,7 @@ a:active {
 /*Buttons*/
 
 .white-btn:link,
-.white-btn:visited ,
+.white-btn:visited,
 .white-btn:hover,
 .white-btn:active {
 
@@ -63,7 +63,6 @@ a:active {
   transition-duration: 0.2s, 0.2s;
   letter-spacing: 0.07rem;
 }
-
 
 /* Top part of the site */
 
@@ -339,8 +338,6 @@ dd {
   z-index: -200;
   position: absolute;
 }
-
-
 
 .third-dl {
   height: 100%;
@@ -1234,21 +1231,16 @@ dd > figure > img {
     font-size: 0.8rem;
   }
 
-  /*
-    ---------800--------End Of Nav--------------------
-    */
-  /*
-  ------------800-------First Section-----------------
-   */
-  /*.first-section h1 {
+  /*---------------Third Section-------------------
+
+ */
+
+  .third-left h3 {
     font-size: 1.5rem;
   }
-
-  .first-section h2 {
-    font-size: 2.5rem;
-  }*/
-
 }
+
+
 
 @media (max-width: 700px) {
   .first-section {
@@ -1368,6 +1360,41 @@ dd > figure > img {
   .first-section {
     height: 100vh;
   }
+
+
+  /*---------------Third Section-------------------
+
+*/
+  .third-left {
+    width: 100%;
+      }
+  .third-left h3 {
+    font-size: 2.2rem;
+    outline: solid 2px red;
+    width: 90%;
+  }
+  .third-left p {
+    outline: red 2px solid;
+    width: 30%;
+  }
+  .third-middle dt {
+    outline: 2px solid red;
+    width: 240%;
+  }
+.third-middle dl {
+  padding-bottom: 170%;
+}
+
+dt:hover + dd  {
+  width: 100%;
+  padding-top: 5%;
+  right: -32%;
+  top: 35%;
+}
+  dt:hover + dd figcaption {
+  height: 7%;
+  }
+
 }
 
 /*  .first-section h1 {
