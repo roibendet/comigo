@@ -207,42 +207,7 @@ input {
 
 }
 
-/*.third-section > div {
-  height: 100%;
-}*/
-/*.third-section > div > div {
-  padding-top: 5%;
-  padding-bottom: 5%;
-}*/
-/*.fullscreen-bg {
-    !*position: fixed;*!
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    !*overflow: hidden;*!
-    z-index: -100;
-}*/
-/*.fullscreen-bg__video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 39.5vw;
-  z-index: -50;
-  overflow: hidden;
-}*/
-/*.third-right {
-    float: right;
 
-    outline: 2px green solid;
-    width: 45.5%;
-    height: 100%;
-}*/
-/*.third-left * {
-  padding-top: 5%;
-  padding-bottom: 5%;
-}*/
 
 .third-left {
   width: 30%;
@@ -362,7 +327,7 @@ dt:hover + dd {
 
 dd > figure {
   height: 100%;
-
+outline: 2px solid blue;
   margin: 0;
 }
 
@@ -408,101 +373,137 @@ dd > figure > img {
   padding: 0;
   margin: 0;
   border: 0;
-  height: 42vw;
+  height: 45vw;
   width: 100%;
+  position: relative;
 }
 
 .forth-section h3,
 .forth-section a {
   text-transform: uppercase;
-
 }
 
-.forth-section-div1 {
-  /*display: inline-block;*/
+.forth-section-left {
+
   float: left;
   width: 50%;
   height: 100%;
   background-image: url("../assest/other/ic_EI_cloud_2_home_page.png"), url("../assest/other/home-tv-service-bg1.png");
   background-repeat: no-repeat, no-repeat;
-  background-size: 320px 255px, 100% 100%;
-  background-position: left 150px top 55px, left top;
+  /*background-size: 320px 255px, 100% 100%;*/
+  background-size: 50% 50%, 100% 100%;
+  background-position:36% 24%, left top;
   margin: 0;
   padding: 0;
   border: 0;
   text-align: left;
+  position: relative;
+}
+.forth-section-left-wraper {
+  /*padding-left: 22%;*/
+  /*padding-top: 52%;*/
+  /*padding-bottom: 5%;*/
+  /*width: 100%;*/
+  /*height: 100%;*/
+  position: absolute;
+  bottom: 8%;
+  left: 18%;
+  /*outline: 2px pink solid;*/
 }
 
-.forth-section-div1 h3 {
-  margin: 0;
-  padding-top: 52%;
-  padding-left: 22%;
-  font-size: 2.1rem;
+.forth-section-left h3 {
+
+  font-size: 2rem;
   font-weight: normal;
   color: white;
   line-height: 2.5rem;
   width: 60%;
+  /*outline: 2px green solid;*/
 
 }
 
-.forth-section-div1 p {
-  margin-left: 22%;
+.forth-section-left p {
+  /*margin-left: 22%;*/
   color: white;
   font-size: 0.95rem;
   margin-top: 0.3%;
+  /*outline: 2px red solid;*/
 }
 
-.forth-section-div1 a {
+.forth-section-left a {
 
-  margin-left: 22%;
+  /*margin-left: 22%;*/
   color: #f14848;
   margin-top: 1%;
 
 }
 
-.forth-section-div1 > a:hover {
+.forth-section-left > a:hover {
   box-shadow: 0 5px 20px 10px rgba(0, 0, 0, 0.1);
   transform: translateY(-3px);
 }
 
-.forth-section-div2 {
+.forth-section-right {
   /*display: inline-block;*/
   float: right;
   width: 50%;
   height: 100%;
   background-image: url("../assest/other/ic-stb-screens.png"), url("../assest/other/home-tv-service-bg2.png");
   background-repeat: no-repeat, no-repeat;
-  background-size: 280px 280px, 100% 100%;
-  background-position: left 52px top 40px, left top;
+  background-size: 40% 50%, 100% 100%;
+  background-position: 20% 20%, left top;
   margin: 0;
   padding: 0;
   border: 0;
   text-align: left;
+  position: relative;
 
 }
 
-.forth-section-div2 h3 {
-  padding-left: 8%;
-  font-weight: lighter;
-  padding-top: 52%;
-  padding-bottom: 1.5%;
-  margin: 0;
+
+.forth-section-right-wraper {
+
+
+  /*padding-left: 9%;*/
+  /*padding-top: 52%;*/
+  /*padding-bottom: 5%;*/
+  /*width: 100%;*/
+  /*height: 100%;*/
+  /*outline: 2px green solid;*/
+  position: absolute;
+  bottom: 8%;
+  left: 8%;
+
+
+}
+
+.forth-section-right h3 {
+  color: #3D3D3D;
+  line-height: 2.5rem;
+  /*outline: 2px blue solid;*/
   font-size: 2rem;
+  font-weight: normal;
+  width: 100%;
+
+}
+
+.forth-section-right p {
+  /*padding-left: 8%;*/
+  /*margin: 0;*/
+  margin-top: 0;
+  /*padding-bottom: 3%;*/
   color: #3D3D3D;
+  /*outline: 2px red solid;*/
+  width: 70%;
 }
 
-.forth-section-div2 p {
-  padding-left: 8%;
-  margin: 0;
-  padding-bottom: 3%;
-  color: #3D3D3D;
+.forth-section-right a {
+  /*margin-left: 8%;*/
+  /*margin-top: 1%;*/
+  margin-top: 1%;
 }
 
-.forth-section-div2 a {
-  margin-left: 8%;
-}
-
-.forth-section-div2 > a:hover {
+.forth-section-right > a:hover {
   box-shadow: 0 5px 20px 10px rgba(0, 0, 0, 0.1);
   transform: translateY(-3px);
 }
@@ -521,7 +522,29 @@ dd > figure > img {
   height: 500px;
   background: url("../assest/other/screen_whos_on.jpg") no-repeat right bottom;
   background-size: contain;
+  display: block;
+  position: relative;
 }
+.fifth-section-wraper {
+  outline: 2px green solid;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+}
+
+.fifth-section h3 {
+  outline: 2px blue solid;
+  font-size: 2.5rem;
+  width: 30%;
+  font-weight: 100;
+  line-height: 1.1;
+}
+.fifth-section p {
+  outline: 2px pink solid;
+  width: 40%;
+}
+
 
 /*
 ----------------------Sixth Section---------------------
