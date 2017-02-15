@@ -207,8 +207,6 @@ input {
 
 }
 
-
-
 .third-left {
   width: 30%;
 }
@@ -327,7 +325,7 @@ dt:hover + dd {
 
 dd > figure {
   height: 100%;
-outline: 2px solid blue;
+  outline: 2px solid blue;
   margin: 0;
 }
 
@@ -392,13 +390,14 @@ dd > figure > img {
   background-repeat: no-repeat, no-repeat;
   /*background-size: 320px 255px, 100% 100%;*/
   background-size: 50% 50%, 100% 100%;
-  background-position:36% 24%, left top;
+  background-position: 36% 24%, left top;
   margin: 0;
   padding: 0;
   border: 0;
   text-align: left;
   position: relative;
 }
+
 .forth-section-left-wraper {
   /*padding-left: 22%;*/
   /*padding-top: 52%;*/
@@ -460,9 +459,7 @@ dd > figure > img {
 
 }
 
-
 .forth-section-right-wraper {
-
 
   /*padding-left: 9%;*/
   /*padding-top: 52%;*/
@@ -473,7 +470,6 @@ dd > figure > img {
   position: absolute;
   bottom: 8%;
   left: 8%;
-
 
 }
 
@@ -517,34 +513,41 @@ dd > figure > img {
 }
 
 .fifth-section {
-  padding-top: 2px;
+
   width: auto;
-  height: 500px;
-  background: url("../assest/other/screen_whos_on.jpg") no-repeat right bottom;
-  background-size: contain;
+  height: 45vw;
+  background-image: url("../assest/other/screen_whos_on.jpg");
+  background-repeat: no-repeat;
+  background-position: right -15% top;
+  background-size: 60%;
   display: block;
   position: relative;
+  /*margin-bottom: 5%;*/
+  margin-top: 3%;
 }
+
 .fifth-section-wraper {
-  outline: 2px green solid;
+  /*outline: 2px green solid;*/
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 50%;
+  bottom: 25%;
+  left: 10%;
+  width: 100%;
+
 }
 
 .fifth-section h3 {
-  outline: 2px blue solid;
+  /*padding-top: 10%;*/
+  /*outline: 2px blue solid;*/
   font-size: 2.5rem;
   width: 30%;
   font-weight: 100;
   line-height: 1.1;
 }
+
 .fifth-section p {
-  outline: 2px pink solid;
+  /*outline: 2px pink solid;*/
   width: 40%;
 }
-
 
 /*
 ----------------------Sixth Section---------------------
@@ -565,6 +568,7 @@ dd > figure > img {
   /*outline: 1px red solid;*/
   display: inline-block;
   float: left;
+  position: relative;
 
 }
 
@@ -585,6 +589,11 @@ dd > figure > img {
   text-align: left;
   font-size: 3rem;
   font-weight: normal;
+  position: absolute;
+  width: 50%;
+  left: 4%;
+  top: 18%;
+  text-transform: uppercase;
 
   background-color: #F9F9F9;
   display: inline-block;
@@ -598,6 +607,17 @@ dd > figure > img {
   margin: 0;
   padding: 0;
   border: 0;
+  position: relative;
+
+  /*text-align: center;*/
+}
+.sixth-section-left-up span {
+ position: absolute;
+  margin: 0 auto;
+  bottom: 10%;
+  left: 12%;
+  width: 70%;
+  color: white;
 
 }
 
@@ -641,7 +661,33 @@ dd > figure > img {
   /*outline: 2px blue solid;*/
   width: 63%;
   height: 100%;
+  background-image: url('../assest/other/img-event-IBC.jpg');
+  background-repeat: no-repeat;
+  background-size: 60%;
+  background-position: center center;
+  transition-property: transform, box-shadow, z-index;
+  transition-duration: 0.3s, 0.3s;
+  z-index: 50;
+
 }
+.schedule:hover {
+  box-shadow: 0 0 20px 2px rgba(239, 239, 239, 0.8);
+  transform: scale(1.03, 1.03);
+  z-index: 60;
+}
+.schedule a {
+  display: block;
+  height: 100%;
+  outline: 2px pink solid;
+  position: relative;
+}
+.schedule a span {
+  position: absolute;
+  top:1%;
+  left:1%;
+  text-transform: uppercase;
+}
+
 
 .sixth-section-right {
   display: inline-block;
@@ -1245,6 +1291,13 @@ dd > figure > img {
 
 }
 
+@media screen and (max-width: 960px) {
+  .fifth-section h3 {
+    font-size: 1.5rem;
+    width: 20%;
+  }
+}
+
 @media screen and (max-width: 800px) {
 
   /*
@@ -1257,13 +1310,10 @@ dd > figure > img {
   /*---------------Third Section-------------------
 
  */
-
   .third-left h3 {
     font-size: 1.5rem;
   }
 }
-
-
 
 @media (max-width: 700px) {
   .first-section {
@@ -1384,38 +1434,42 @@ dd > figure > img {
     height: 100vh;
   }
 
-
   /*---------------Third Section-------------------
 
 */
   .third-left {
     width: 100%;
-      }
+  }
+
   .third-left h3 {
     font-size: 2.2rem;
     outline: solid 2px red;
     width: 90%;
   }
+
   .third-left p {
     outline: red 2px solid;
     width: 30%;
   }
+
   .third-middle dt {
     outline: 2px solid red;
     width: 240%;
   }
-.third-middle dl {
-  padding-bottom: 170%;
-}
 
-dt:hover + dd  {
-  width: 100%;
-  padding-top: 5%;
-  right: -32%;
-  top: 35%;
-}
+  .third-middle dl {
+    padding-bottom: 170%;
+  }
+
+  dt:hover + dd {
+    width: 100%;
+    padding-top: 5%;
+    right: -32%;
+    top: 35%;
+  }
+
   dt:hover + dd figcaption {
-  height: 7%;
+    height: 7%;
   }
 
 }
