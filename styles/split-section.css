@@ -141,12 +141,12 @@
 
     /*outline: blue solid 1px;*/
     padding: 30vw;
-    height: calc(90vw - 60px);
+    height: calc(90vw - 50px);
   }
   .split-section > div > div {
 
     position: absolute;
-    bottom: 8%;
+    bottom: 4%;
     left: 8%;
   }
 
