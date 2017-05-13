@@ -7,7 +7,7 @@
 
   width: auto;
   /*height: 45vw;*/
-  height: calc(45vw - 60px);
+  /*height: calc(45vw - 60px);*/
   background-image: url("../assest/other/screen_whos_on.jpg");
   background-repeat: no-repeat;
   background-position: right -15% top 0;
