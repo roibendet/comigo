@@ -14,7 +14,7 @@
   background-size: 60%;
   display: block;
   position: relative;
-  /*margin-bottom: 5%;*/
+  margin-bottom: 3%;
   margin-top: 3%;
 }
 .whos-on-wraper {
@@ -41,7 +41,7 @@
 
 @media screen and (max-width: 700px) {
   .whos-on {
-    height: 80vw;
+    /*height: 80vw;*/
   }
 }
 
