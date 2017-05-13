@@ -249,6 +249,19 @@
   color: white;
 }
 @media (max-width: 700px) {
+  .site-footer-bottom-left > ul > li:not(:first-child)::before {
+    content: "";
+  padding: 0;
+
+  }
+  .site-footer-bottom-left > ul > li {
+    font-size: 0.7rem;
+    display: block;
+    width: 100%;
+  }
+
+
+
   .bottom-logo {
     right: 25%;
   }
