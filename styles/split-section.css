@@ -140,13 +140,14 @@
     width: 100%;
 
     /*outline: blue solid 1px;*/
-    padding: 1vw;
+    padding: 30vw;
     height: calc(90vw - 60px);
   }
   .split-section > div > div {
-    left: 8%;
+
     position: absolute;
     bottom: 8%;
+    left: 8%;
   }
 
 
