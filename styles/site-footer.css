@@ -249,6 +249,10 @@
   color: white;
 }
 @media (max-width: 700px) {
+  .site-footer-bottom-left {
+    width: 100%;
+    margin: 0 auto;
+  }
   .site-footer-bottom-left > ul > li:not(:first-child)::before {
     content: "";
   padding: 0;
@@ -258,6 +262,7 @@
     font-size: 0.7rem;
     display: block;
     width: 100%;
+    text-align: center;
   }
 
 
@@ -270,13 +275,25 @@
   }
 
   .site-footer-bottom-right {
+    width: 100%;
     line-height: 1;
+    margin-bottom: 10px;
   }
+  .site-footer-bottom-right div {
+     float: none;
+    text-align: center;
+  }
+
 
   .site-footer-bottom-right > div > ul > li:first-child {
     margin-right: 5px;
     display: block;
     line-height: 2;
+    margin-bottom: 10px;
+  }
+  .site-footer-bottom-right > div > ul > li:not(:first-child) {
+    margin-right: 5px;
+    margin-left: 5px;
   }
 
   .site-footer-up-background {
