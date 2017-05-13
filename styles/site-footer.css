@@ -249,6 +249,9 @@
   color: white;
 }
 @media (max-width: 700px) {
+  .bottom-logo {
+    right: 25%;
+  }
   .site-footer-bottom {
     line-height: 2;
   }
@@ -276,6 +279,7 @@
   }
 
   .nav-ul-main-bottom {
+    padding-top: 50px;
   display: inline-grid;
     height: 100%;
   }
