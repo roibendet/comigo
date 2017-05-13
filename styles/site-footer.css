@@ -270,7 +270,8 @@
     height: auto;
   }
   .nav-footer span {
-    font-size: 1.5rem;
+    font-size: 1rem;
+    font-weight: lighter;
     padding: 5px;
   }
   .nav-ul-main-bottom > li {
