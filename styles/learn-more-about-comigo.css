@@ -1,0 +1,179 @@
+.learn-more-about-comigo {
+  width: 100%;
+  height: 40.5vw;
+  display: inline-block;
+  background-color: #EFEFEF;
+  /*overflow: hidden;*/
+  position: relative;
+
+}
+
+.learn-more-about-comigo-left {
+  width: 60%;
+  height: 100%;
+  /*outline: 1px red solid;*/
+  display: inline-block;
+  float: left;
+  position: relative;
+
+}
+.learn-more-about-comigo-left-up {
+  height: 50%;
+  width: 100%;
+  /*outline: 1px red solid;*/
+}
+
+.learn-more-about-comigo-left-up-1 {
+  float: left;
+  width: 63%;
+  height: 100%;
+  background-color: #F9F9F9;
+}
+.learn-more-about-comigo-left-up h3 {
+  text-align: left;
+  font-size: 3rem;
+  font-weight: normal;
+  position: absolute;
+  width: 50%;
+  left: 4%;
+  top: 18%;
+  text-transform: uppercase;
+
+  background-color: #F9F9F9;
+  display: inline-block;
+}
+
+.learn-more-about-comigo-left-up a {
+  background-color: #F14848;
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  position: relative;
+
+  /*text-align: center;*/
+}
+.learn-more-about-comigo-left-up span {
+  position: absolute;
+  margin: 0 auto;
+  bottom: 10%;
+  left: 12%;
+  width: 70%;
+  color: white;
+
+}
+
+.learn-more-about-comigo-left-up-2 {
+  width: 37%;
+  height: 100%;
+  float: right;
+}
+.learn-more-about-comigo-left-bottom {
+  /*outline: 1px red solid;*/
+  height: 50%;
+  width: 100%;
+  display: inline-block;
+  background-color: #E8E8E8;
+}
+.social {
+  width: 37%;
+  height: 100%;
+  /*outline: 2px red solid;*/
+  float: left;
+  list-style: none;
+  background-color: #EFEFEF;
+}
+
+.social li {
+  list-style: none;
+}
+
+.social li a {
+  list-style: none;
+  width: 25px;
+  height: 25px;
+  /*outline: 2px red solid;*/
+}
+.schedule {
+  text-transform: uppercase;
+  float: right;
+  /*outline: 2px blue solid;*/
+  width: 63%;
+  height: 100%;
+  background-image: url('../assest/other/img-event-IBC.jpg');
+  background-color: #E8E8E8;
+  background-repeat: no-repeat;
+  background-size: 60%;
+  background-position: center center;
+  transition-property: transform, box-shadow, z-index;
+  transition-duration: 0.3s, 0.3s;
+  z-index: 50;
+  position: relative;
+
+}
+
+.schedule:hover {
+  box-shadow: 0 0 20px 2px rgba(239, 239, 239, 0.8);
+  transform: scale(1.03, 1.03);
+  z-index: 60;
+}
+
+.schedule a {
+  display: block;
+  height: 100%;
+  /*outline: 2px pink solid;*/
+  position: relative;
+}
+
+.schedule a span {
+  position: absolute;
+  top: 1%;
+  left: 1%;
+  text-transform: uppercase;
+}
+.learn-more-about-comigo-right {
+  display: inline-block;
+
+  width: 40%;
+  height: 100%;
+  background-color: #EFEFEF;
+  vertical-align: bottom;
+  float: right;
+  transition-property: transform, box-shadow;
+  transition-duration: 0.3s, 0.3s;
+  position: absolute;
+  z-index: 50;
+  background-image: url(../assest/other/screen_demo.jpg);
+  background-size: 100% 75%;
+  background-position: bottom 0 left 30px;
+  background-repeat: no-repeat;
+
+}
+.learn-more-about-comigo-right:hover {
+  box-shadow: 0 0 20px 2px rgba(239, 239, 239, 0.8);
+  transform: scale(1.03, 1.03);
+
+}
+.demo {
+  height: 100%;
+  width: 100%;
+  display: inline-block;
+  position: relative;
+  /*outline: 2px red solid;*/
+
+}
+
+.demo span {
+  display: block;
+  width: 84%;
+  height: 23%;
+  /*outline: 2px green solid;*/
+  text-transform: uppercase;
+  position: absolute;
+  top: 3%;
+  left: 5%;
+  font-size: 3rem;
+
+}

@@ -1,0 +1,52 @@
+.experience-Intelli {
+  color: white;
+  /*height: 38.32vw;*/
+  display: block;
+  height: 100%;
+  background: url("../assest/other/homepage-featured-new-1920x745.jpg") no-repeat top center;
+  background-size: cover;
+  /*width: 100%;*/
+  text-align: center;
+  /*padding: 12vw 0 5vw 0;*/
+
+  padding: 10% 1% 15% 1%;
+}
+
+.experience-Intelli * {
+  font-weight: normal;
+
+}
+
+.experience-Intelli-h1 {
+  font-size: 1.8rem;
+  margin: 0;
+}
+
+
+.experience-Intelli-h2 {
+  font-size: 3.89rem;
+  margin: 0;
+}
+
+.experience-Intelli > header > a {
+
+  margin-top: 2%;
+  transition-property: box-shadow, transform;
+  transition-duration: 0.2s, 0.2s;
+}
+
+.experience-Intelli > header > a:hover {
+  box-shadow: 0 5px 20px 10px rgba(0, 0, 0, 0.1);
+  transform: translateY(-3px);
+}
+@media (max-width: 700px) {
+  .experience-Intelli {
+    background-position: top center;
+    height: 50vw;
+    padding-top: 35%;
+  }
+
+  .experience-Intelli {
+    height: 100vh;
+  }
+}

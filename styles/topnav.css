@@ -1,0 +1,354 @@
+/* Top part of the site */
+
+.header {
+  position: fixed;
+  background-color: white;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 66px;
+  line-height: 66px;
+  padding-left: 1.7rem;
+  margin: 0;
+  z-index: 100;
+  box-shadow: 0 0 20px 1px rgba(21, 21, 21, 0.81);
+}
+
+.logo-top {
+  background: url("../assest/logo/comigo-logo-black.png") no-repeat left center;
+  line-height: 66px;
+  width: 140px;
+  height: 66px;
+  display: inline-block;
+  padding: 0;
+}
+
+.menu-link,
+label {
+  display: none;
+}
+
+input {
+  opacity: 0;
+}
+
+
+
+/*
+----------------------First Stage Of Nav--------------
+ */
+
+
+
+
+@media screen and (min-width: 701px) {
+  .main-nav {
+    float: right;
+    clear: both;
+    text-transform: uppercase;
+    position: static;
+    z-index: 100;
+
+  }
+
+  .main-nav-ul {
+    display: inline;
+    padding: 0 8px;
+    list-style: none;
+    position: static;
+    z-index: 50;
+
+  }
+
+
+
+  .main-nav-ul > li {
+    float: left;
+    padding-left: 0.13rem;
+    padding-right: 0.13rem;
+
+    transition-property: transform, opacity;
+    transition-duration: 0.3s, 0.3s;
+  }
+
+  .main-nav-ul > li > a {
+    text-transform: none;
+    display: block;
+    height: 100%;
+    padding-left: 0.6rem;
+    padding-right: 0.6rem;
+    z-index: 40;
+
+  }
+
+  .main-nav-ul > li > ul {
+
+    overflow: hidden;
+    transition-property: opacity, height, overflow;
+    height: 0;
+    transition-duration: 0.3s, 0.3s;
+    list-style: none;
+    position: absolute;
+    top: 66px;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.99);
+    width: 100%;
+    padding: 0;
+    z-index: -30;
+  }
+
+  .main-nav-ul > li:hover > ul {
+    overflow:visible;
+    display: inline;
+    position: absolute;
+    top: 66px;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.99);
+    width: 100%;
+    padding: 0;
+    opacity: 0.99;
+    height: 150px;
+    /*transform: translateY(0);*/
+    z-index: 10;
+
+  }
+
+  .main-nav-ul span {
+    line-height: 1;
+    display: inline-block;
+    vertical-align: middle;
+    position: static;
+    z-index: -20;
+  }
+
+  /*
+  ----------------------Second Stage Of Nav--------------
+   */
+
+  .main-nav-ul ul ul {
+    overflow: hidden;
+    height: 0;
+    width: 0;
+    opacity: 0;
+    transition-property: height, opacity;
+    transition-duration: .3s, .3s;
+  }
+
+
+  .mid-nav * {
+    padding: 0;
+  }
+
+  .mid-nav > li {
+    width: 33.3333333%;
+    float: left;
+
+  }
+
+  .mid-nav > li > a {
+    line-height: 150px;
+    font-size: 1.8rem;
+    display: block;
+    text-align: center;
+    transition-property: background, color;
+    transition-duration: 0.5s, 0.5s;
+
+
+
+  }
+
+  .mid-nav  li:hover  a:hover {
+    color: rgba(255, 255, 255, 0.98);
+    background-color: rgba(241, 72, 72, 0.99);
+
+  }
+
+  .mid-nav > li > ul {
+    display: inline-block;
+    /*transition-duration: 0.5s, 0.5s;*/
+    height: 0;
+    transition-property:  height;
+    list-style: none;
+    position: absolute;
+    top: 150px;
+    left: 0;
+
+
+  }
+
+  .mid-nav > li:hover > ul {
+    height: 150px;
+    display: inline-block;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.99);
+    opacity: 0.99;
+  }
+
+  /*
+  ---------------------Third Stage Of Nav----------------
+   */
+  .deep-menu > li {
+    width: 100%;
+  }
+
+  .deep-menu > li > a {
+    width: 50%;
+    line-height: 150px;
+    font-size: 1.8rem;
+    float: left;
+    text-align: center;
+    transition-property: background, color;
+    transition-duration: 0.5s, 0.5s;
+  }
+
+  .deep-menu > li:hover > a:hover {
+    color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(241, 72, 72, 0.99);
+  }
+
+}
+
+
+@media screen and (max-width: 800px) {
+
+  .main-nav-ul a {
+    font-size: 0.8rem;
+  }
+}
+
+
+
+
+@media (max-width: 700px) {
+
+  /*
+----------700---------First Stage Of Nav--------------
+ */
+  header {
+    z-index: 100;
+  }
+
+  .logo-top {
+    position: static;
+    z-index: 200;
+  }
+
+  .main-nav {
+    transform: translateY(-1000%);
+    transition-property: transform;
+    transition-duration: 0.5s;
+    position: inherit;
+    z-index: -100;
+  }
+
+  .menu-link,
+  label {
+    /*display: inline-block;*/
+    /*float: right;*/
+    /*font-weight: bold;*/
+    /*text-transform: capitalize;*/
+    /*padding-right: 2%;*/
+  }
+
+  .menu-link:checked ~ .icon-menu {
+    display: none;
+  }
+
+  .menu-link ~ .icon-menu {
+    /*display: none;*/
+    font-size: 1.5rem;
+    display: inline-block;
+    float: right;
+    font-weight: bold;
+    text-transform: capitalize;
+    padding-right: 2%;
+  }
+
+
+
+
+  .menu-link ~ .icon-cross {
+    display: none;
+  }
+
+  .menu-link:checked ~ .icon-cross {
+   display: block;
+    font-size: 1.5rem;
+    float: right;
+    font-weight: bold;
+    text-transform: capitalize;
+    padding-right: 2%;
+    line-height: 66px;
+  }
+
+  .icon-menu::before {
+    line-height: 66px;
+  }
+
+  .menu-link:checked header {
+    display: inline-block;
+    float: none;
+    position: static;
+
+  }
+
+  .menu-link:checked ~ .main-nav {
+
+    transform: translateY(0);
+    display: block;
+    background-color: white;
+    position: fixed;
+    top: 66px;
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 66px);
+    /*height: 100vw;*/
+    overflow: auto;
+    z-index: -50;
+
+  }
+
+  .menu-link:checked ~ .main-nav * {
+    list-style: none;
+    line-height: 200%;
+    text-transform: capitalize;
+    font-size: 1.1rem;
+    padding: 0;
+    border: 0;
+    margin: 0;
+
+  }
+
+  .menu-link:checked ~ .main-nav-ul {
+    height: 100%;
+  }
+
+  .menu-link:checked ~ .main-nav-ul > li:last-of-type > a {
+    height: 100%;
+    padding-bottom: 20px;
+  }
+
+  .menu-link:checked ~ .main-nav > ul li {
+    padding-left: 5%;
+    /*display: block;*/
+  }
+
+  .menu-link:checked ~ .main-nav .mid-nav li:before {
+    content: ' - ';
+    color: #7a7a7a;
+  }
+
+  .menu-link:checked ~ .main-nav span > br {
+    display: none;
+    /*display: block;*/
+  }
+
+  .menu-link:checked ~ .main-nav > ul > li:nth-child(1) > a {
+    color: #F14848;
+    font-weight: bold;
+  }
+}
+
+/*
+---------700---------End Nav----------------------------
+ */

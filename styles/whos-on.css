@@ -1,0 +1,50 @@
+.whos-on h3,
+.whos-on a {
+  text-transform: uppercase;
+}
+
+.whos-on {
+
+  width: auto;
+  /*height: 45vw;*/
+  height: calc(45vw - 60px);
+  background-image: url("../assest/other/screen_whos_on.jpg");
+  background-repeat: no-repeat;
+  background-position: right -15% top 0;
+  background-size: 60%;
+  display: block;
+  position: relative;
+  /*margin-bottom: 5%;*/
+  margin-top: 3%;
+}
+.whos-on-wraper {
+  /*outline: 2px green solid;*/
+  /*position: absolute;*/
+  /*bottom: 25%;*/
+  /*left: 10%;*/
+  /*width: 100%;*/
+
+}
+.whos-on h3 {
+  /*padding-top: 10%;*/
+  /*outline: 2px blue solid;*/
+  font-size: 2.5rem;
+  width: 30%;
+  font-weight: 100;
+  line-height: 1.1;
+}
+
+.whos-on p {
+  /*outline: 2px pink solid;*/
+  width: 40%;
+}
+
+@media screen and (max-width: 960px) {
+  .whos-on {
+    height: 50vw;
+  }
+  .whos-on h3 {
+    font-size: 1.5rem;
+    width: 20%;
+  }
+}
