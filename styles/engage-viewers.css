@@ -201,7 +201,7 @@ dd > figure > img {
     width: 100%;
     padding-top: 5%;
     right: -32%;
-    top: 50%;
+    top: 45%;
   }
 
   dt:hover + dd figcaption {
