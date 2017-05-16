@@ -3,7 +3,6 @@
   padding: 0;
   margin: 0;
   border: 0;
-  /*height: 45vw;*/
   height: 100%;
   width: 100%;
   position: relative;
@@ -31,15 +30,9 @@
   position: relative;
 }
 .split-section-left-wraper {
-  /*padding-left: 22%;*/
-  /*padding-top: 52%;*/
-  /*padding-bottom: 5%;*/
-  /*width: 100%;*/
-  /*height: 100%;*/
   position: absolute;
   bottom: 8%;
   left: 18%;
-  /*outline: 2px pink solid;*/
 }
 
 .split-section-left h3 {
@@ -49,24 +42,18 @@
   color: white;
   line-height: 2.5rem;
   width: 60%;
-  /*outline: 2px green solid;*/
 
 }
 
 .split-section-left p {
-  /*margin-left: 22%;*/
   color: white;
   font-size: 0.95rem;
   margin-top: 0.3%;
-  /*outline: 2px red solid;*/
 }
 
 .split-section-left a {
-
-  /*margin-left: 22%;*/
   color: #f14848;
   margin-top: 1%;
-
 }
 .split-section-left > a:hover {
   box-shadow: 0 5px 20px 10px rgba(0, 0, 0, 0.1);
@@ -74,7 +61,6 @@
 }
 
 .split-section-right {
-  /*display: inline-block;*/
   float: right;
   width: 50%;
   height: 100%;
@@ -91,12 +77,6 @@
 }
 .split-section-right-wraper {
 
-  /*padding-left: 9%;*/
-  /*padding-top: 52%;*/
-  /*padding-bottom: 5%;*/
-  /*width: 100%;*/
-  /*height: 100%;*/
-  /*outline: 2px green solid;*/
   position: absolute;
   bottom: 8%;
   left: 8%;
@@ -105,24 +85,19 @@
 .split-section-right h3 {
   color: #3D3D3D;
   line-height: 2.5rem;
-  /*outline: 2px blue solid;*/
   font-size: 2rem;
   font-weight: normal;
   width: 100%;
 
 }
 .split-section-right p {
-  /*padding-left: 8%;*/
-  /*margin: 0;*/
+
   margin-top: 0;
-  /*padding-bottom: 3%;*/
   color: #3D3D3D;
-  /*outline: 2px red solid;*/
   width: 70%;
 }
 .split-section-right a {
-  /*margin-left: 8%;*/
-  /*margin-top: 1%;*/
+
   margin-top: 1%;
 }
 
@@ -131,15 +106,10 @@
   transform: translateY(-3px);
 }
 @media screen and (max-width: 700px) {
-/*  .split-section-left-wraper {
-    left: 8%;
-    position: absolute;
-    bottom: 8%;
-  }*/
+
   .split-section > div {
     width: 100%;
 
-    /*outline: blue solid 1px;*/
     padding: 30vw;
     height: calc(90vw - 40px);
   }
@@ -149,11 +119,6 @@
     bottom: 4%;
     left: 8%;
   }
-
-
-/*  .split-section > .split-section-left > .split-section-left-wraper {
-    left: 8%;
-  }*/
 
 
 }

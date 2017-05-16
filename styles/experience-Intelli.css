@@ -1,15 +1,9 @@
 .experience-Intelli {
   color: white;
-  /*height: 38.32vw;*/
   display: block;
-  /*height: 100%;*/
   background: url("../assest/other/homepage-featured-new-1920x745.jpg") no-repeat top center;
   background-size: cover;
-  /*width: 100%;*/
   text-align: center;
-  /*padding: 12vw 0 5vw 0;*/
-
-  /*padding: 10% 1% 15% 1%;*/
   padding: 10vw 1vw 15vw 1vw;
 }
 
@@ -43,11 +37,5 @@
 @media (max-width: 700px) {
   .experience-Intelli {
     background-position: top center;
-    /*height: 50vw;*/
-    /*padding-top: 35%;*/
-  }
-
-  .experience-Intelli {
-    /*height: 100vh;*/
   }
 }

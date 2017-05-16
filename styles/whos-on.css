@@ -5,11 +5,7 @@
 
 .whos-on {
   padding: 1vw;
-
-
   width: auto;
-  /*height: 45vw;*/
-  /*height: calc(45vw - 60px);*/
   background-image: url("../assest/other/screen_whos_on.jpg");
   background-repeat: no-repeat;
   background-position: right -15% top 0;
@@ -19,17 +15,8 @@
   margin-bottom: 3%;
   margin-top: 3%;
 }
-.whos-on-wraper {
-  /*outline: 2px green solid;*/
-  /*position: absolute;*/
-  /*bottom: 25%;*/
-  /*left: 10%;*/
-  /*width: 100%;*/
 
-}
 .whos-on h3 {
-  /*padding-top: 10%;*/
-  /*outline: 2px blue solid;*/
   font-size: 2.5rem;
   width: 30%;
   font-weight: 100;
@@ -37,14 +24,11 @@
 }
 
 .whos-on p {
-  /*outline: 2px pink solid;*/
   width: 40%;
 }
 
 @media screen and (max-width: 700px) {
-  .whos-on {
-    /*height: 80vw;*/
-  }
+
 }
 
 @media screen and (max-width: 960px) {
